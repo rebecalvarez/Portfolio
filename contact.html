@@ -8,7 +8,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="assets/css/style.css">    
+<link rel="stylesheet" href="assets/css/style.css"> 
+<link href="assets/css/form.css" rel="stylesheet" type="text/css"/>
+<script src="assets/js/form.js"></script>   
 <link href="https://fonts.googleapis.com/css?family=Lovers+Quarrel|Ruthie" rel="stylesheet">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rebeca Portfolio</title>
@@ -58,23 +60,35 @@
              <h3 class="headerTitle">Contact Me</h3>
              <hr>
             <div class="row">
-             <div class="col-lg-3"> <img class="pic-profile" src="assets/images/RebecaProfilepicture.png" alt=""></div>
-             <div class="col-lg-9 content-style">
-              <p>Born and raised in Costa Rica, Rebeca is a singer/songwriter/worship leader that has recorded in several Spanish Christian albums and toured for the VineyardMusic label. </p>
-              <p>She is married and has two beautiful daughters.</p>
-              <p>Rebeca enjoys computers and design. She started her own business in 1996 for web/graphic design that converted into IT support for business in 1998, now with the name of <a href="http://liveconnexus.com/" target="_blank">LiveConnexus</a>.</p>
-              
-              <p>Solving puzzles and fixing things are her passion. Fixing things from a microwave,
-                  dishwasher, etc to computer and bug fixes, make her feel so accomplished.</p>
-                  <p>She enjoys designing and creating solutions to life problems through software.</p>
-                  <br>
-                  <br>
+             <div class="col-lg-12"> 
+            
+              <div class="mainForm">
 
-             </div>
+                <form method="post"  enctype="text/plain" class="validate" action="mailto:rebeca.dodero@gmail.com" onsubmit="location.href='thanks.html';">
+                    <div class="form-field">
+                      <label for="full-name">Full Name</label>
+                      <input type="text" name="full-name" id="full-name" placeholder="Joe Bloggs" required />
+                    </div>
+                    <div class="form-field">
+                      <label for="email-input">Email</label>
+                      <input type="email" name="email-input" id="email-input" placeholder="example@domain.com" required />
+                    </div>
+                    <div class="form-field">
+                      <label for="message">Message</label>
+                      <textarea cols='40' rows='5' type="message" name="message" id="message" required></textarea>
+                    </div>
+                    <div class="form-field">
+                      <label for=""></label>
+                      <input class="button" type="submit" value="Send" />
+                    </div>
+                  </form>
+        </div>
 
              
          </div>
+         </div>
     
+    </div>
     </div>
 
     <div class="row" >
