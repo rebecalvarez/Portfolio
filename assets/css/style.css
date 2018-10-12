@@ -136,4 +136,18 @@ html {
 
 
 
-
+ 
+    @media (max-width: 768px) {
+        .navbar-collapse-properties {
+            background-color: #fff;
+            
+            
+        margin-left: 60%;
+        margin-top: -70px;
+        max-height: 200px;
+        border-radius: 5px;
+        border: 2px;
+        border-color: #a09f9f;
+        box-shadow: 2px 2px rgb(181, 189, 187);
+        }
+    }
