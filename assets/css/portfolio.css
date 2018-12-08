@@ -42,6 +42,16 @@
 
 
 }
+.info-head{
+    background-color: #397A76;
+    color:white;
+    font-weight: 500;
+}
+
+.links{
+    color: darkslategrey;
+    font-weight: 400;
+}
 
 /*Media Information */
 
